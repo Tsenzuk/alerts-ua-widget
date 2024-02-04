@@ -1,0 +1,8 @@
+html, body {
+  background-color: #14181d;
+  color: white;
+}
+
+#api-response {
+  color: silver;
+}

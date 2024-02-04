@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/alerts.css" />
+  <script src="/js/alerts.js"></script>
+  <title>Alerts widget POC</title>
+</head>
+
+<body>
+  <h1>Alerts widget POC</h1>
+  <div id="api-response"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', { scope: '/' });
+    }
+  </script>
+</body>
+
+</html>

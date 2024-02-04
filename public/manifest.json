@@ -1,0 +1,17 @@
+{
+  "lang": "en-us",
+  "name": "Alerts widget POC",
+  "short_name": "Alerts widget",
+  "description": "Windows 11 widget for alerts.in.ua Just a proof of concept, use at one's own risk",
+  "start_url": "/",
+  "background_color": "#14181d",
+  "theme_color": "#14181d",
+  "orientation": "any",
+  "display": "standalone",
+  "icons": [
+      {
+          "src": "/img/alerts.png",
+          "sizes": "512x512"
+      }
+  ]
+}
