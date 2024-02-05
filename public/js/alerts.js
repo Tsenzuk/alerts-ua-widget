@@ -2,17 +2,19 @@
 
 async function HelloWorld() {
   try {
-    const response = await fetch('./api/hello-world');
-    const helloWorld = await response.json();
-    document.getElementById('api-response').innerText = JSON.stringify(helloWorld);
+    const response = await fetch('./api/alerts-image');
+    const apiResponse = await response.json();
+    document.querySelector('#api-response > img').src = apiResponse.mapUrl;
+    document.querySelector('#api-response > figcaption').innerText = apiResponse.message;
   } catch (error) {
-    document.getElementById('api-response').innerText = JSON.stringify(error);
+    document.querySelector('#api-response > img').src = '';
+    document.querySelector('#api-response > figcaption').innerText = JSON.stringify(error);
   }
 }
 
 document.addEventListener('readystatechange', (event) => {
   if (event.target.readyState === 'interactive') {
-    document.getElementById('api-response').innerText = 'Loading...';
+    document.querySelector('#api-response > figcaption').innerText = 'Loading...';
   } else if (event.target.readyState === 'complete') {
     HelloWorld();
   }

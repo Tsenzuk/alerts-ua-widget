@@ -22,7 +22,7 @@
       "tag": "alerts",
       "template": "alerts-first-template",
       "ms_ac_template": "/widgets/alerts-main.json",
-      "data": "/api/widget-data",
+      "data": "/api/alerts-image",
       "type": "application/json",
       "screenshots": [
         {

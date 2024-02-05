@@ -13,7 +13,10 @@
 
 <body>
   <h1>Alerts widget POC</h1>
-  <div id="api-response"></div>
+  <figure id="api-response">
+    <img src="" alt="Alerts map" style="width:100%">
+    <figcaption></figcaption>
+  </figure>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js', { scope: '/' });

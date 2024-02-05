@@ -4,15 +4,24 @@
     {
       "type": "TextBlock",
       "size": "Medium",
-      "text": "Message from api:",
-      "horizontalAlignment": "Center"
+      "text": "Connection lost. Please pay attention to your local air alerts sygnals.",
+      "horizontalAlignment": "Center",
+      "$when": "!${connected}"
+    },
+    {
+      "type": "Image",
+      "spacing": "Medium",
+      "horizontalAlignment": "Center",
+      "size": "Large",
+      "url": "${mapUrl}",
+      "$when": "${connected}"
     },
     {
       "type": "TextBlock",
       "spacing": "Large",
-      "weight": "Bolder",
       "horizontalAlignment": "Center",
-      "text": "${message}"
+      "text": "${message}",
+      "$when": "${connected}"
     }
   ],
   "actions": [

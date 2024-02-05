@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-globals */
 /* global self, caches */
 
-const CACHE_NAME = 'alerts-widget-poc-v2';
+const CACHE_NAME = 'alerts-widget-poc-v3';
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', (event) => {
