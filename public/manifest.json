@@ -3,15 +3,70 @@
   "name": "Alerts widget POC",
   "short_name": "Alerts widget",
   "description": "Windows 11 widget for alerts.in.ua Just a proof of concept, use at one's own risk",
-  "start_url": "/",
-  "background_color": "#14181d",
-  "theme_color": "#14181d",
+  "start_url": "/index.html",
+  "background_color": "#202124",
+  "theme_color": "#202124",
   "orientation": "any",
   "display": "standalone",
   "icons": [
-      {
-          "src": "/img/alerts.png",
+    {
+      "src": "/img/alerts.png",
+      "sizes": "512x512"
+    }
+  ],
+  "widgets": [
+    {
+      "name": "Alerts widget POC First",
+      "short_name": "Alerts widget first",
+      "description": "Windows 11 widget for alerts.in.ua Just a proof of concept, use at one's own risk",
+      "tag": "alerts",
+      "template": "alerts-first-template",
+      "ms_ac_template": "/widgets/alerts-main.json",
+      "data": "/api/widget-data",
+      "type": "application/json",
+      "screenshots": [
+        {
+          "src": "./img/screenshot-first-widget.png",
+          "sizes": "600x400",
+          "label": "Windows 11 first widget"
+        }
+      ],
+      "icons": [
+        {
+          "src": "img/alerts.png",
           "sizes": "512x512"
-      }
+        },
+        {
+          "src": "favicon.ico",
+          "sizes": "256x256"
+        },
+        {
+          "src": "favicon.ico",
+          "sizes": "128x128"
+        },
+        {
+          "src": "favicon.ico",
+          "sizes": "64x64"
+        },
+        {
+          "src": "favicon.ico",
+          "sizes": "48x48"
+        },
+        {
+          "src": "favicon.ico",
+          "sizes": "32x32"
+        },
+        {
+          "src": "favicon.ico",
+          "sizes": "24x24"
+        },
+        {
+          "src": "favicon.ico",
+          "sizes": "16x16"
+        }
+      ],
+      "auth": false,
+      "update": 1
+    }
   ]
 }

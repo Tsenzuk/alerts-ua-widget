@@ -13,6 +13,12 @@ app.get('/api/hello-world', (req, res) => {
   res.json({ message: 'Hello World!' });
 });
 
+app.get('/api/widget-data', (req, res) => {
+  res.json({
+    message: `Hello Widget! ${new Date().toISOString()}`,
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });

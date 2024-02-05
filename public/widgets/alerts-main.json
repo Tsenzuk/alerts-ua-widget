@@ -1,0 +1,29 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Medium",
+      "text": "Message from api:",
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "TextBlock",
+      "spacing": "Large",
+      "weight": "Bolder",
+      "horizontalAlignment": "Center",
+      "text": "${message}"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Execute",
+      "title": "Refresh",
+      "verb": "refresh",
+      "style": "positive",
+      "iconUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktYXJyb3ctcmVwZWF0IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik0xMS41MzQgN2gzLjkzMmEuMjUuMjUgMCAwIDEgLjE5Mi40MWwtMS45NjYgMi4zNmEuMjUuMjUgMCAwIDEtLjM4NCAwbC0xLjk2Ni0yLjM2YS4yNS4yNSAwIDAgMSAuMTkyLS40MW0tMTEgMmgzLjkzMmEuMjUuMjUgMCAwIDAgLjE5Mi0uNDFMMi42OTIgNi4yM2EuMjUuMjUgMCAwIDAtLjM4NCAwTC4zNDIgOC41OUEuMjUuMjUgMCAwIDAgLjUzNCA5Ii8+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOCAzYy0xLjU1MiAwLTIuOTQuNzA3LTMuODU3IDEuODE4YS41LjUgMCAxIDEtLjc3MS0uNjM2QTYuMDAyIDYuMDAyIDAgMCAxIDEzLjkxNyA3SDEyLjlBNSA1IDAgMCAwIDggM00zLjEgOWE1LjAwMiA1LjAwMiAwIDAgMCA4Ljc1NyAyLjE4Mi41LjUgMCAxIDEgLjc3MS42MzZBNi4wMDIgNi4wMDIgMCAwIDEgMi4wODMgOXoiLz4KPC9zdmc+"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.5"
+}
